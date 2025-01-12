@@ -82,6 +82,7 @@
     align-items: center;
     border-radius: 50%;
     font-size: 22px;
+    border: 1px solid white;
 }
 .container .contactInfo .box .text{
     display: flex;
