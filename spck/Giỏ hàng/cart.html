@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Tên của trang web -->
+        <title>giỏ hàng</title>
+        <link rel="stylesheet" href="cart.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+          <div class="container2">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo.png" width="200px">
+                </div>
+                <nav>
+                  <ul>
+                      <li><a href="/Trang chủ/trangchu.html">Home</a></li>
+                      <li><a href="/Thông tin/tt.html">About</a></li>
+                      <li><a href="">Contact</a></li>
+                      <li><a href="/Đăng nhập , đăng ký/Đăng ký/dangky.html">Account</a></li>
+                      <li><a href="/Thời tiết/tt.html">Weather</a></li>
+
+                  </ul>
+                </nav>
+            </div>
+         </div>
+        <div class="container">
+           <div class="center">
+
+               <h2>PRODUCTS</h2>
+               <div class="list">
+                   <div class="item" data-key="1">
+                       <div class="img">
+                        <img src="/Trang chủ/cat1.jpg" alt="">
+                       </div>
+                       <div class="content">
+                            <div class="tittle">Strawberry ice cream</div>
+                            <div class="des">
+                                Kem dâu là một món tráng miệng mát lạnh với hương vị dâu.Được làm từ kem tươi và dâu xay nhuyễn, kem dâu có màu hồng nhạt à kết cấu mềm mại, mang đến sự kết hợp hoàn hảo giữa độ ngọt và chua nhẹ của dâu. 
+                    Đây là lựa chọn tuyệt vời cho những ngày hè hoặc các bữa tiệc
+                            </div>
+                            <div class="price">20.000 VND</div>
+                            <input type="number" class="count" min="1" value="1">
+                            <button class="add">Add to cart</button>
+                            <button class="remove" onclick="Remove(1)"><i class='bx bxs-trash'></i></button>
+
+                       </div>
+                    
+                   </div>
+                   <div class="item" data-key="2">
+                    <div class="img">
+                     <img src="/Trang chủ/buble tea.jpg" alt="">
+                    </div>
+                    <div class="content">
+                         <div class="tittle">Bubble tea</div>
+                         <div class="des">
+                            Ly trà sữa mát lạnh được đựng trong cốc trong suốt, bên trong là lớp trà nâu nhạt pha lẫn màu trắng ngà của sữa. 
+                    Những viên trân châu đen óng ánh nằm ở đáy cốc, tạo cảm giác hấp dẫn khi nhìn qua lớp đáy trong suốt
+                         </div>
+                         <div class="price">30.000 VND</div>
+                         <input type="number" class="count" min="1" value="1">
+                         <button class="add">Add to cart</button>
+                         <button class="remove" onclick="Remove(2)" ><i class='bx bxs-trash'></i></button>
+                         
+                    </div>
+                </div>
+                <div class="item" data-key="3">
+                    <div class="img">
+                     <img src="/Trang chủ/soda.jpg" alt="">
+                    </div>
+                    <div class="content">
+                         <div class="tittle">Strawberry soda</div>
+                         <div class="des">
+                            Soda dâu là một loại đồ uống giải khát kết hợp giữa hương vị tươi mát của dâu tây và độ sủi bọt của nước soda. Đồ uống này thường có màu hồng hoặc đỏ nhạt, 
+                    mang hương thơm ngọt ngào và vị chua dịu từ dâu tây tươi, tạo cảm giác sảng khoái khi uống.
+                         </div>
+                         <div class="price">15.000 VND</div>
+                         <input type="number" class="count" min="1" value="1">
+                         <button class="add">Add to cart</button>
+                         <button class="remove" onclick="Remove(3)"><i class='bx bxs-trash'></i></button> 
+                    </div>
+                </div>
+                <div class="item" data-key="4">
+                    <div class="img_p">
+                     <img src="/Trang chủ/peach tea.jpg" alt="">
+                    </div>
+                    <div class="content">
+                         <div class="tittle">Peach tea</div>
+                         <div class="des">
+                            Trà đào là một loại đồ uống thanh mát kết hợp giữa vị ngọt dịu của quả đào và hương vị đặc trưng của trà. Trà thường được pha từ lá trà đen hoặc trà xanh, sau đó được làm ngọt nhẹ bằng siro đào hoặc nước cốt đào.
+                            Đào tươi hoặc đào đóng hộp thường được cắt lát và thêm vào để tăng thêm hương vị trái cây tươi mới.
+                         </div>
+                         <div class="price">50.000 VND</div>
+                         <input type="number" class="count" min="1" value="1">
+                         <button class="add">Add to cart</button>
+                         <button class="remove" onclick="Remove(4)"><i class='bx bxs-trash'></i></button> 
+                    </div>
+                </div>
+                <div class="item" data-key="5">
+                    <div class="img">
+                     <img src="/Trang chủ/capuchino.jpg" alt="">
+                    </div>
+                    <div class="content">
+                         <div class="tittle">Cappuccino</div>
+                         <div class="des">
+                             Cappuccino là một loại cà phê nổi tiếng của Ý, được làm từ sự kết hợp hài hòa giữa espresso, sữa nóng, và bọt sữa mịn. Cappuccino thường có ba lớp: lớp đầu tiên là espresso đậm đà, tiếp theo là một lượng nhỏ sữa nóng, và cuối cùng là một lớp bọt sữa dày và mịn. 
+                             Lớp bọt này đôi khi được rắc thêm một chút bột cacao hoặc bột quế để tạo hương vị.
+                         </div>
+                         <div class="price">30.000 VND</div>
+                         <input type="number" class="count" min="1" value="1">
+                         <button class="add">Add to cart</button>
+                         <button class="remove" onclick="Remove(5)"><i class='bx bxs-trash'></i></button> 
+                    </div>
+                </div>
+                <div class="item" data-key="6">
+                    <div class="img">
+                     <img src="/Trang chủ/matcha soda.jpg" alt="">
+                    </div>
+                    <div class="content">
+                         <div class="tittle">matcha soda</div>
+                         <div class="des">
+                            Matcha soda là sự kết hợp độc đáo giữa bột trà xanh matcha và nước soda có ga, mang lại hương vị tươi mới và sảng khoái. Matcha, với màu xanh lá đặc trưng và hương vị thanh đắng nhẹ, được pha loãng trong nước, sau đó kết hợp với nước soda sủi bọt. 
+                    Đôi khi, một ít đường hoặc mật ong có thể được thêm vào để cân bằng vị đắng tự nhiên của matcha, tạo nên một sự hòa quyện giữa vị ngọt, đắng và sự mát lạnh từ soda.
+                         </div>
+                         <div class="price">15.000 VND</div>
+                         <input type="number" class="count" min="1" value="1">
+                         <button class="add">Add to cart</button>
+                         <button class="remove" onclick="Remove(6)"><i class='bx bxs-trash'></i></button> 
+                    </div>
+                </div>
+                <div class="item" data-key="7">
+                    <div class="img">
+                     <img src="/Trang chủ/coffe.jpg" alt="">
+                    </div>
+                    <div class="content">
+                         <div class="tittle">Sea salt coffee</div>
+                         <div class="des">
+                            Cà phê muối là một loại cà phê đặc biệt, kết hợp giữa vị đắng đặc trưng của cà phê và chút vị mặn nhẹ của muối, tạo ra một hương vị độc đáo và lôi cuốn. Cà phê thường được pha từ hạt cà phê rang xay nguyên chất, 
+                    sau đó thêm một lượng nhỏ muối vào để làm tăng vị ngọt tự nhiên của cà phê và làm dịu đi độ chua và đắng.
+                         </div>
+                         <div class="price">40.000 VND</div>
+                         <input type="number" class="count" min="1" value="1">
+                         <button class="add">Add to cart</button>
+                         <button class="remove" onclick="Remove(7)"><i class='bx bxs-trash'></i></button> 
+                    </div>
+                </div>
+                <div class="item" data-key="8">
+                    <div class="img">
+                     <img src="/Trang chủ/egg.jpg " alt="">
+                    </div>
+                    <div class="content">
+                         <div class="tittle">Egg coffee</div>
+                         <div class="des">
+                            Cà phê trứng là một thức uống độc đáo và nổi tiếng của Việt Nam, đặc biệt là ở Hà Nội.
+                            Đây là sự kết hợp giữa cà phê đen đậm đà và hỗn hợp trứng đánh bông mịn màng, mang lại hương vị béo ngậy, thơm ngon.
+                         </div>
+                         <div class="price">50.000 VND</div>
+                         <input type="number" class="count" min="1" value="1">
+                         <button class="add">Add to cart</button>
+                         <button class="remove" onclick="Remove(8)"><i class='bx bxs-trash'></i></button> 
+                    </div>
+                </div>
+               </div>
+               <div class="promotion">
+                <h2>Special Offers</h2>
+                <div class="offer-list">
+                    <div class="offer-item">
+                        <h3>Summer Sale</h3>
+                        <p>
+                            Get 20% off on all drinks. Use code: <b class="offer-code">SUMMER20</b>
+                            <button class="copy-code-btn">Copy</button>
+                        </p>
+                    </div>
+                    <div class="offer-item">
+                        <h3>Free Shipping</h3>
+                        <p>
+                            Free shipping on orders over 100,000 VND. Use code: <b class="offer-code">FREESHIP</b>
+                            <button class="copy-code-btn">Copy</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+           </div>
+
+           <div class="cart">
+            <div class="name">CART</div>
+            <div class="listcart"></div>
+            <div class="discount">
+                <input type="text" class="discount-input" placeholder="Enter promo code">
+                <button class="discount-btn">Apply</button>
+            </div>
+            <button class="calculate-total-btn">Tính tổng</button>
+            <div class="cart-total">Total: 0 VND</div>
+
+           </div>
+        </div>
+         <div class="footer">
+            <div class="c3">
+                 <div class="row">
+                     <div class="footer-col-1">
+                         <h3>Download our app</h3>
+                         <p>Download App for Android and Ios mobile phone</p>
+                         <div class="app-logo">
+                             <img class="playstore" src="play-store-logo-33874.png" width="140px">
+                             <img class="appstore" src="app-store-png-logo-33116.png" width="200px">
+                         </div>
+                     </div>
+                     <div class="footer-col-2">
+                         <img src="logo.png" width="300px">
+                         <p>Our purpose is to sutainanly make the pleasure</p>
+                     </div>
+                     <div class="footer-col-3">
+                         <h3>Useful links</h3>
+                         <ul>
+                             <li>Coupons</li>
+                             <li>Blog post</li>
+                             <li>Return Policy</li>
+                             <li>Join Affiliate</li>
+                         </ul>
+                     </div>
+                     <div class="footer-col-4">
+                         <h3>Follow us</h3>
+                         <ul>
+                             <li>Facebook</li>
+                             <li>Twitter</li>
+                             <li>Instargram</li>
+                             <li>Youtube</li>
+                         </ul>
+                     </div>
+            </div>
+        </div>
+       </div>
+    </body>
+    <script src="cart.js"></script>
+</html>

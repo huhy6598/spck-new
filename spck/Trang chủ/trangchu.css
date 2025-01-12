@@ -1,0 +1,360 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width:  2200px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 75%;
+    padding: 10px 0;
+    margin-left: 300px;
+}
+.col-2 h1{
+    font-size: 60px;
+    color: 	#8B4513;
+    margin-left: 400px;
+    margin-top: -200px;
+}
+.btn{
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    background: #8b4513c8;
+    color: #f1f1f1;
+    padding: 6px 30px;
+    margin-left: 590px;
+    border-radius: 30px;
+}
+.btn:hover{
+    background: #563434;
+
+}
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.header .row{
+    margin-top: 50px;
+}
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    display: flex;
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 25px;
+}
+.cat1{
+    margin-left: 0px;
+}
+.cat2{
+    margin-left: 50px;
+    height: 400px;
+}
+.cat3{
+    margin-left: 100px;
+    height: 400px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.small-container2{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
+h2{
+    font-size: 30px
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.rating .bx{
+    color: #ff523b;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+.testimonial{
+    padding-top: 100px;
+}
+.testimonial .col-3{
+   text-align: center;
+   padding: 40px 20px;
+   box-shadow:  0 0 20px 0px rgba(0,0,0,0.1);
+   cursor: pointer;
+}
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover{
+    transform:  translateY(-10px);
+}
+.bx.bxs-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.testimonial .col-3 h3{
+    font-weight:  600;
+    color: #555;
+    font-size: 16px;
+}
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+     min-width: 250px;
+     margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+.footer-col-3 li, .footer-col-4 li{
+    color: #8a8a8a;
+}
+ul{
+    list-style-type: none;
+}
+
+.appstore{
+    margin-bottom: 90px;
+
+    margin-left: 10px;
+}
+.playstore{
+    margin-bottom: 100px;
+}
+.row2{
+    display: flex;
+}
+.pic_str{
+    width: 200px;
+}
+.pic2{
+   width: 180px;
+    height: 250px;
+} 
+.pic_soda{
+    width: 200px;
+    height: 250px;
+}
+.pic_tea{
+    width: 200px;
+    height: 250px;
+}
+.pic_capu{
+    width: 230px;
+    height: 355px;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-left: 500px;
+    
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-right: 5px;
+    outline: none;
+    height: 50px;
+    width: 500px;
+}
+
+.search-bar button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 50px;
+    width: 50px;
+}
+
+.search-bar button:hover {
+    background-color: #555;
+}
+.search-bar {
+    position: relative; /* Đặt thanh tìm kiếm làm tham chiếu */
+}
+
+#searchResults {
+    display: none; /* Ẩn kết quả ban đầu */
+    position: absolute; /* Định vị tương đối so với thanh tìm kiếm */
+    top: 100%; /* Đặt kết quả ngay dưới thanh tìm kiếm */
+    left: 0;
+    width: 100%; /* Chiếm toàn bộ chiều rộng thanh tìm kiếm */
+    background-color: #f9f9f9; /* Màu nền */
+    border-radius: 8px; /* Bo tròn góc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+    z-index: 1000; /* Đảm bảo nằm trên các phần tử khác */
+    font-family: 'Poppins', sans-serif;
+    max-height: 300px; /* Giới hạn chiều cao nếu quá dài */
+    overflow-y: auto; /* Thêm thanh cuộn nếu cần */
+    padding: 10px;
+}
+
+#searchResults div {
+    padding: 10px;
+    margin: 10px 0;
+    border-bottom: 1px solid #ddd; /* Đường chia kết quả */
+    display: flex;
+    align-items: center;
+}
+
+#searchResults div:last-child {
+    border-bottom: none; /* Loại bỏ đường cuối */
+}
+
+#searchResults img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* Cắt ảnh vừa khung */
+    border-radius: 50%; /* Ảnh tròn */
+    margin-right: 10px;
+    border: 1px solid #ddd; /* Đường viền nhẹ */
+}
+
+#searchResults h4 {
+    font-size: 18px;
+    margin: 0;
+}
+
+#searchResults p {
+    font-size: 14px;
+    margin: 10px;
+    color: #555; /* Màu chữ phụ */
+}
